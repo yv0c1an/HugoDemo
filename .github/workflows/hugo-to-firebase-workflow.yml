@@ -20,7 +20,7 @@ jobs:
     # Fetch Hugo to Firebase docker image
     - uses: wajahatkarim3/Hugo-On-Fire@0.49.2
       env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SOGIRLE }}
 
     # Runs a single command using the runners shell
     # - name: Run a one-line script
