@@ -16,7 +16,8 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
+    - name: nva
+      run: nvm install 16.4.0
     # Fetch Hugo to Firebase docker image
     - uses: wajahatkarim3/Hugo-On-Fire@0.49.2
       env:
